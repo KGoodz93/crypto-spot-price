@@ -1,7 +1,7 @@
 """
 Author: Kelv Gooding
 Created: 28/03/2022
-Version: 1.004
+Version: 1.005
 """
 
 # Modules
@@ -14,7 +14,7 @@ from openpyxl.styles import Alignment
 
 # Variables
 
-document = "/export/shared-snowmoon/reports/daily_crypto_prices.xlsx"
+document = "spot-prices.xlsx"
 dt = datetime.datetime.today().strftime("%d/%m/%Y")
 
 # Script
@@ -210,6 +210,7 @@ def spotprice_hnt():
     wb.close()
 
 spotprice_algo()
+spotprice_atom()
 spotprice_btc()
 spotprice_eth()
 spotprice_hnt()
